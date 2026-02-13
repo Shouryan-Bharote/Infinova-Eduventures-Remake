@@ -11,6 +11,8 @@ import { Routes, Route } from "react-router-dom";
 // import CourseFormPage from "../pages/CourseFormPage/CourseFormPage";
 // import ComingSoon from "../pages/comingsoon/comingsoon";
 import ScrollToTop from "../components/ScrollToTop";
+import EduventuresForStudents from "../pages/EduventuresForStudents";
+import EduventuresForUniversities from "../pages/EduventuresForUniversities";
 
 const AppRoutes = () => {
   return (
@@ -18,16 +20,9 @@ const AppRoutes = () => {
   <ScrollToTop/>
     <Routes>
       {/* Main Pages */}
-      <Route path="/" element={<Home />} />
-      <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/careers" element={<CareersPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/mission" element={<MissionPage />} />
-        <Route path="/vision" element={<VisionPage />} />
-        <Route path="/blog" element={<BlogPage/>} />
-        <Route path="/coming-soon" element={<ComingSoon/>} />
-        <Route path="/courses" element={<EduventuresCourses />} />
-        <Route path="/course-form" element={<CourseFormPage />} />
+      <Route path="/" element={<EduventuresForStudents />} />
+       <Route path="foruniversities" element={<EduventuresForUniversities />} />
+      
 
       {/* 404 Not Found - Optional */}
       <Route path="*" element={<div className="min-h-screen flex items-center justify-center bg-[#FFFFFF]">

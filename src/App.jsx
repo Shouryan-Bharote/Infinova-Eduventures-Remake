@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter } from 'react-router'
-// import Navbar from './components/Navbar/Navbar'
 import AppRoutes from './routes/AppRoutes'
 import FooterAnuj from './components/Footer/FooterAnuj'
+import EduventuresNavbar from './components/EduventuresNavbar/EduventuresNavbar'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Navbar/> */}
+        <EduventuresNavbar/>
         <AppRoutes/>
         <FooterAnuj/>
       </BrowserRouter>
