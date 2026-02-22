@@ -1,12 +1,13 @@
 import React, { useRef } from 'react'
+// import EduventuresForUniversitiesNavbar from '../../components/EduventuresForUniversitiesNavbarNew'
+import EduventuresUnversitiessHero from '../../components/EduventuresUniversititesHeroNew'
+// import EduventuresUniversitiesContact from './EduventuresUniversitiesContact'
+import UpskillingWorkshopsSection from '../../components/UpskillingWorkshopsSection/UpskillingWorkshopsSection'
+import CollegeTrainersSection from '../../components/CollegeTrainerSection/CollegeTrainerSection'
+import CollegeTestimonialsSection from '../../components/CollegeTestimonialsSection/CollegeTestimonialsSection'
+import Companies_marquee from '../../components/Companies_marquee'
 import EduventuresForUniversitiesNavbar from '../../components/EduventuresForUniversitiesNavbarNew'
-import EduventuresUnversitiessHero from './EduventuresUniversititesHeroNew'
-import EduventuresUniversitiesContact from './EduventuresUniversitiesContact'
-import UpskillingWorkshopsSection from '../components/UpskillingWorkshopsSection/UpskillingWorkshopsSection'
-import CollegeTrainersSection from '../components/CollegeTrainerSection/CollegeTrainerSection'
-import CollegeTestimonialsSection from '../components/CollegeTestimonialsSection/CollegeTestimonialsSection'
-import EduventuresTestimonials from './EduventuresTestimonials'
-import Companies_marquee from '../components/Companies_marquee'
+import EduventuresUniversitiesContact from '../../components/EduventuresUniversitiesContact'
 
 const EduventuresForUniversities = () => {
   const contactFormRef = useRef(null); // Create ref for contact form

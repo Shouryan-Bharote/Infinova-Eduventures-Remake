@@ -1,20 +1,20 @@
 import React, { useEffect, useRef } from 'react'
 
 
-import StudentTrainersSection from '../components/StudentTrainerSection/StudentTrainerSection'
+import StudentTrainersSection from '../../components/StudentTrainerSection/StudentTrainerSection'
 // import EduventuresTrainers from '../../components/EduventuresForStudentsTrainers'
 // import EduventuresStudentsTestimonials from '../../components/EduventuresStudentsTestimonials'
 // import EduventuresForStudentsSoftSkills from '../../components/EduventuresForStudentsSoftSkills'
-import SoftSkillsCoursesSection from '../components/SoftSkillsCoursesSection/SoftSkillsCoursesSection'
+import SoftSkillsCoursesSection from '../../components/SoftSkillsCoursesSection/SoftSkillsCoursesSection'
 
 
-import StudentTestimonialsSection from '../components/StudentTestimonialsSection/StudentTestimonialsSection'
+import StudentTestimonialsSection from '../../components/StudentTestimonialsSection/StudentTestimonialsSection'
 import { useLocation } from 'react-router-dom';
-import Navbar from '../components/EduventuresForStudentsNavbarNew/EduventuresForStudentsNavbarNew'
-import EduventuresForStudentsHeroSection from '../components/EduventuresForStudentsHeroSectionNew/EduventuresForStudentsHeroSectionNew'
-import BookingForm from '../components/BookingFormForStudentsEduventures/BookingFormForStudentsEduventures'
-import MasterClasses from '../components/EduventuresForStudentsMasterClassCard/EduventuresForStudentsMasterClassCard'
-import JobOrientedCoursesSection from '../components/JobOrientedCoursesSection/JobOrientedCoursesSection'
+import Navbar from '../../components/EduventuresForStudentsNavbarNew/EduventuresForStudentsNavbarNew'
+import EduventuresForStudentsHeroSection from '../../components/EduventuresForStudentsHeroSectionNew/EduventuresForStudentsHeroSectionNew'
+import BookingForm from '../../components/BookingFormForStudentsEduventures/BookingFormForStudentsEduventures'
+import MasterClasses from '../../components/EduventuresForStudentsMasterClassCard/EduventuresForStudentsMasterClassCard'
+import JobOrientedCoursesSection from '../../components/JobOrientedCoursesSection/JobOrientedCoursesSection'
 
 const EduventuresForStudents = () => {
 

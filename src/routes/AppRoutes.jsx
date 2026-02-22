@@ -11,8 +11,8 @@ import { Routes, Route } from "react-router-dom";
 // import CourseFormPage from "../pages/CourseFormPage/CourseFormPage";
 // import ComingSoon from "../pages/comingsoon/comingsoon";
 import ScrollToTop from "../components/ScrollToTop";
-import EduventuresForStudents from "../pages/EduventuresForStudents";
-import EduventuresForUniversities from "../pages/EduventuresForUniversities";
+import EduventuresForStudents from "../pages/EduventuresForStudents/EduventuresForStudents";
+import EduventuresForUniversities from "../pages/EduventuresForUniversities/EduventuresForUniversities";
 
 const AppRoutes = () => {
   return (
