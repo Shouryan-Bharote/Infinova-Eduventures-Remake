@@ -1,51 +1,71 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CourseCard.css';
 
-const CourseCard = ({ 
-  image, 
-  title, 
-  duration, 
+const CourseCard = ({
+  image,
+  title,
+  duration,
   durationValue,
   additionalInfo,
   additionalInfoValue,
-  downloadLink 
+  downloadLink
 }) => {
+
+  // useEffect(() => {
+  //   const fetchSearchCourses = async () => {
+  //     try {
+  //       const res = await axios.get(import.meta.env.VITE_BACKEND_BROCHURE_DOWNLOAD);
+  //       console.log(res);
+
+  //     } catch (error) {
+  //       console.error("Error fetching search courses: ", error);
+  //     }
+  //   };
+  //   fetchSearchCourses();
+  // }, []);
+
+  const handleDownload = ()=>{
+
+  }
+
+
   return (
     <div className="course-card">
       <div className="course-image-container">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="course-image"
         />
       </div>
-      
+
       <div className="course-content">
         <h3 className="course-title">{title}</h3>
-        
+
         <div className="course-details">
           <p className="course-info">
             <span className="info-label">{duration}:</span> {durationValue}
           </p>
-          
+
           {additionalInfo && (
             <p className="course-info">
               <span className="info-label">{additionalInfo}:</span> {additionalInfoValue}
             </p>
           )}
         </div>
-        
-        <a 
-          href={downloadLink} 
+
+        <a
+          href={downloadLink}
+          // onClick={() => handleDownload}
           download
           className="download-btn"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <svg 
-            className="download-icon" 
-            viewBox="0 0 24 24" 
-            fill="none" 
+          <svg
+            className="download-icon"
+            viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
             strokeWidth="2"
           >

@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchCourses, setSearchCourses] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
-  const [filteredSearchCourses, setFilteredSearchCourses] = useState([]);
+  const [filteredSearchCourses, setFilteredSearchCourses] = useState(null);
   const [searchLoading, setSearchLoading] = useState(false);
   
   const searchInputRef = useRef(null);
@@ -21,7 +21,10 @@ const Navbar = () => {
     const fetchSearchCourses = async () => {
       try {
         setSearchLoading(true);
-        const res = await axios.get(import.meta.env.VITE_BACKEND_NEW_COURSES);
+        const res = await axios.get(import.meta.env.VITE_BACKEND_BROCHURE_DOWNLOAD);
+        console.log(import.meta.env.VITE_BACKEND_NEW_COURSES)
+        console.log(res);
+        
         if (res.data && res.data.length > 0) {
           setSearchCourses(res.data);
           setFilteredSearchCourses(res.data.slice(0, 3));
@@ -137,11 +140,11 @@ const Navbar = () => {
                           className="p-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50 transition-colors flex items-center gap-4"
                           onClick={() => handleSearchCourseSelect(course)}
                         >
-                          <img 
+                          {/* <img 
                             src={course.courseImageUrl || 'course.png'} 
                             alt={course.name}
                             className="w-12 h-12 rounded-md object-cover"
-                          />
+                          /> */}
                           <div className="flex-1">
                             <div className="font-semibold text-sm text-gray-900">
                               {course.name}
